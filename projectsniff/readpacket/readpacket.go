@@ -11,6 +11,7 @@ import (
 
 var icmpfilter string = "src host 0.0.0.0 and icmp"
 var dnsfilter string = "udp and port 53"
+
 var (
 	snaplen int32 = 65535
 	promisc bool  = false
