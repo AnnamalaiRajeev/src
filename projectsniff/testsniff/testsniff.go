@@ -1,10 +1,15 @@
 package main
 
 import (
+	"/projectsniff/flags"
 	"fmt"
 	"projectsniff/readpacket"
 	"strings"
 )
+
+
+interfacepattern  := flags.Flag_{"filename","test.txt","The name of the input file"}
+
 
 func main() {
 	devices, err := readpacket.Findalldevice()
